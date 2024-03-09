@@ -13,11 +13,10 @@ class Borrower {
   String get contactInfo => this._contactInfo;
   List<Book> get borrowedBooks => this._borrowedBooks;
 
-  set id(int id) => this._id = id;
-  set name(String name) => this._name = name;
-  set contactInfo(String contactInfo) => this._contactInfo = contactInfo;
-  set borrowedBooks(List<Book> borrowedBooks) =>
-      this._borrowedBooks = borrowedBooks;
+  set id(int id) => _id = id;
+  set name(String name) => _name = name;
+  set contactInfo(String contactInfo) => _contactInfo = contactInfo;
+  set borrowedBooks(List<Book> borrowedBooks) => _borrowedBooks = borrowedBooks;
 
   void display() {
     print("Borrower id: ${this.id}");
